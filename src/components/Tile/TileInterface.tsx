@@ -9,4 +9,5 @@ export interface TileInterface {
     title: string;
     style?: CSSProperties;
     url?: string;
+    img?: string;
 }

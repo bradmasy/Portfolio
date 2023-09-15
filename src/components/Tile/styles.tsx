@@ -13,6 +13,7 @@ const fontFace = `
 
 export const TileStyles: React.CSSProperties = {
     display: "flex",
+    flexDirection: "column",
     fontFamily: fontFace,
     height:"100%",
     width:"100%",

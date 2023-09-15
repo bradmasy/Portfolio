@@ -33,7 +33,7 @@ export const TileRow: React.FC<TileRowInterface> = (tileRowProps) => {
 
                 </div>
                 <div style={columnStyles}>
-                    <div style={{...tileContainerStyles,justifyContent:"space-between"}}>
+                    <div style={{ ...tileContainerStyles, justifyContent: "space-between" }}>
                         {tileRowProps.tiles && tileRowProps.tiles.length > 0 && (
                             <>
                                 <Tile {...tileRowProps.tiles[1]} />
@@ -56,6 +56,62 @@ export const TileRow: React.FC<TileRowInterface> = (tileRowProps) => {
             </div>
 
         )
+    }
+    else if (tileCount == 6) {
+        return (
+            <div style={{ ...TileRowStyles, ...tileRowProps.style }}>
+
+                <div style={{ ...columnStyles }}>
+                    <div style={{ ...tileContainerStyles, flexDirection: "row", justifyContent: "space-between" }}>
+                        {tileRowProps.tiles && tileRowProps.tiles.length > 0 && (
+                            <>
+                                <Tile {...tileRowProps.tiles[0]} />
+                                <Tile {...tileRowProps.tiles[1]} />
+                            </>)}
+                    </div>
+
+                </div>
+                <div style={columnStyles}>
+                    <div style={{ ...tileContainerStyles, justifyContent: "space-between" }}>
+                        {tileRowProps.tiles && tileRowProps.tiles.length > 0 && (
+                            <>
+                                <Tile {...tileRowProps.tiles[2]} />
+
+                            </>
+                        )}
+                    </div>
+
+                </div>
+                <div style={columnStyles}>
+                    <div style={{display:"flex",justifyContent:"center", flexDirection:"column",height:"90%"}}>
+                        <div style={{ ...tileContainerStyles, justifyContent: "space-between", flexDirection: "row" }}>
+                            {tileRowProps.tiles && tileRowProps.tiles.length > 0 && (
+                                <>
+                                    <Tile {...tileRowProps.tiles[3]} />
+
+                                    <Tile {...tileRowProps.tiles[4]} />
+
+                                </>
+                            )}
+                        </div>
+                        <div style={{ ...tileContainerStyles,height:"40%", justifyContent: "end", flexDirection: "column" }}>
+                            {tileRowProps.tiles && tileRowProps.tiles.length > 0 && (
+                                <>
+                                    <Tile {...tileRowProps.tiles[5]} />
+
+
+                                </>
+                            )}
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        )
+
     }
     else if (tileCount == 7) {
         return (

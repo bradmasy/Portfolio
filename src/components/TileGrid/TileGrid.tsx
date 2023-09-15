@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { columnStyles, tileContainerStyles, rowStyles } from './styles';
 import { TileRow } from '../TileRow/tileRow';
 import { TileRowInterface } from '../TileRow/tileRowInterface';
-
+import headShot from "../../assets/images/headshot.png";
 
 const rowStyle: React.CSSProperties = {
 
@@ -20,92 +20,99 @@ const TileRowOneProps: TileRowInterface = {
             title: "My Resume",
             style: {
                 backgroundColor: "#BAE8E8",
-            }
+            },
+            url: "/resume"
         },
         {
             title: "GitHub",
             style: {
                 backgroundColor: "#272643",
-                color:"white",
-                width:"47%"
-            }
+                color: "white",
+                width: "47%"
+            },
+            url: "https://github.com/bradmasy"
         },
         {
             title: "About me",
             style: {
                 backgroundColor: "#F5F5F5",
-                width:"47%"
+                width: "47%"
 
-            }
+            },
+            url: "/about"
         },
         {
             title: "Transferable Work Experience",
             style: {
                 backgroundColor: "#2C698D",
-                color:"white",
-            }
+                color: "white",
+            },
+            url: "/experience"
         }
-
-
     ],
 }
 
 const TileRowTwoProps: TileRowInterface = {
-    style: {...rowStyle, height:"50%"},
+    style: { ...rowStyle, height: "50%" },
     tiles: [
 
         {
             title: "Frameworks",
             style: {
                 backgroundColor: "#2C698D",
-                color:"white",
-                width:"100%",
-                height:"25%",
-              
-            }
+                color: "white",
+                width: "100%",
+                height: "25%",
+
+            },
+            url: "/frameworks",
         },
         {
             title: "Languages",
             style: {
                 backgroundColor: "#272643",
-                color:"white",
-                height:"70%",
+                color: "white",
+                height: "70%",
 
-            }
+            },
+            url: "/languages"
         },
         {
             title: "Professional Experience",
             style: {
                 backgroundColor: "white",
 
-            }
+            },
+            url: "/experience"
         },
         {
             title: "Bradley Nicholas Masciotra",
             style: {
                 backgroundColor: "#2C698D",
-                color:"white",
-                fontSize:"2.5em"
+                color: "white",
+                fontSize: "2.5em"
 
-            }
+
+            },
+            url: "/",
+            img: headShot
         },
-    
+
         {
             title: "Technical Skills",
             style: {
                 backgroundColor: "white",
-                width:"100%",
-                height:"100%",
-
+                width: "100%",
+                height: "100%",
             }
         },
         {
             title: "Interests",
             style: {
                 backgroundColor: "#BAE8E8",
-                color:"black",
-                width:"100%",
-                height:"65%"
+                color: "black",
+                width: "100%",
+                height: "65%"
 
             }
         },
@@ -113,9 +120,9 @@ const TileRowTwoProps: TileRowInterface = {
             title: "Another tile",
             style: {
                 backgroundColor: "#272643",
-                color:"white",
-                width:"100%",
-                height:"30%"
+                color: "white",
+                width: "100%",
+                height: "30%"
 
             }
         }
@@ -130,22 +137,55 @@ const TileRowThreeProps: TileRowInterface = {
 
         {
             title: "Tile 10",
-            style:{
-                backgroundColor: "#BAE8E8",
-                color:"black",
-                width:"100%",
+            style: {
+                backgroundColor: "#2C698D",
+                color: "white",
+                width: "60%",
             }
         },
+        {
+            title: "Tile 10",
+            style: {
+                backgroundColor: "#BAE8E8",
+                color: "black",
+                width: "35%",
+            }
+        }, {
+            title: "Projects",
+            style: {
+                backgroundColor: "white",
+                color: "black",
+                width: "100%",
+            }
+        },
+
         {
             title: "Projects",
-            style:{
+            style: {
                 backgroundColor: "#272643",
-                color:"white",
+                color: "white",
+                height: "90%",
+                width: "47%"
+            }
+        }, {
+            title: "LinkedIn",
+            style: {
+                height: "90%",
+                width: "47%",
+                backgroundColor: "#2C698D",
+                color: "white",
+
             }
         },
-        
+
         {
-            title: "Tile 9",
+            title: "Email",
+            style: {
+                backgroundColor: "#BAE8E8",
+                height: "90%",
+                width: "100%"
+
+            }
         },
     ],
 }
